@@ -1,0 +1,2 @@
+for SIHdemo normal static path
+for faq normal static path/faq

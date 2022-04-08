@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import dashboard,Signup,Faq
+from .views import dashboard,Faq
+from . import views
 
 app_name = "yukti"
 
 urlpatterns = [
     path("", dashboard, name="dashboard"),
-    path("signup", Signup, name="Signup"),
     path("faq", Faq, name="Faq"),
 ]

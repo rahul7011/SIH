@@ -4,3 +4,13 @@ for faq normal static path/faq
 
 Customer User model
 https://www.codingforentrepreneurs.com/blog/how-to-create-a-custom-django-user-model
+
+
+Ask aayush to form a new tag for user
+
+test@gmail.com
+test1234
+
+
+check@gmail.com
+check1234

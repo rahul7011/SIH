@@ -1,10 +1,16 @@
+
 from django.shortcuts import render
+from django.urls import reverse_lazy
+from accounts.forms import RegisterForm
+from django.views.generic.edit import CreateView
 
 def dashboard(request):
     return render(request, "SIHdemo/html/Homepage.html")
 
-def Signup(request):
-    return render(request, "SIHdemo/html/index.html")
+# class SignUp(CreateView):
+#     form_class = UserCreationForm
+#     success_url = reverse_lazy("login")
+#     template_name = "registration/signup.html"
 
 def Faq(request):
     return render(request, "faq/index.html")

@@ -7,7 +7,7 @@ from django.contrib.auth.models import (
 
 
 class UserManager(BaseUserManager):
-    def create_user(self, email, password=None):
+    def create_user(self,name,email, password=None):
         """
         Creates and saves a User with the given email and password.
         """
@@ -64,7 +64,7 @@ class User(AbstractBaseUser):
     # notice the absence of a "Password field", that is built in.
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []  # Email & Password are required by default.
+    REQUIRED_FIELDS = ['name']  # Email & Password are required by default.
 
     def get_full_name(self):
         # The user is identified by their email address
